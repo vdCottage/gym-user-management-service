@@ -1,0 +1,55 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Logs
+*.log
+
+# Dependency directories
+vendor/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+bin/
+
+# Environment variables
+.env
+
+# Swagger generated files
+docs/swagger.json
+docs/swagger.yaml
+
+# Migration files
+migrations/*.sql
+
+# Test result files
+*.test
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache files
+.cache/
+
+# Ignore compiled Go files
+*.o
+*.a
+*.out
+
+# Ignore coverage files
+coverage.out
