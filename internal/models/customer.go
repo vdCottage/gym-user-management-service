@@ -78,6 +78,18 @@ type Customer struct {
 	// @example 123e4567-e89b-12d3-a456-426614174000
 	GymOwnerID uuid.UUID `json:"gym_owner_id" gorm:"type:uuid;not null"`
 
+	// @Description Steak count of the customer
+	// @example 0
+	Steak int `json:"steak" gorm:"not null;default:0"`
+
+	// @Description Recommended diet template for the customer
+	// @example null
+	RecommendedDietTemplate string `json:"recommended_diet_template" gorm:"type:json;default:null"`
+
+	// @Description Recommended exercise template for the customer
+	// @example null
+	RecommendedExerciseTemplate string `json:"recommended_exercise_template" gorm:"type:json;default:null"`
+
 	// @Description Creation timestamp
 	CreatedAt time.Time `json:"created_at"`
 
